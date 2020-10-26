@@ -1,0 +1,675 @@
+@font-face {
+  font-family: 'Merriweather';
+  src: url(../../../fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url(../../../fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url(../../../fonts/RobotoCondensed-Regular.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header .header__desk {
+  width: 87.5%;
+  display: block;
+  margin: 0 auto;
+  padding-right: 6.25%;
+  padding-left: 6.25%;
+  padding-bottom: 24px;
+  -webkit-box-shadow: 0px 4px 15px rgba(35, 38, 48, 0.1);
+          box-shadow: 0px 4px 15px rgba(35, 38, 48, 0.1);
+}
+
+.header .up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 19px;
+  padding-top: 20px;
+}
+
+.header .up .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .up .left .inst {
+  margin-right: 56px;
+  width: 28px;
+  height: 28px;
+}
+
+.header .up .left .vk {
+  height: 24px;
+}
+
+.header .up .title {
+  text-decoration: none;
+}
+
+.header .up .title a {
+  text-decoration: none;
+}
+
+.header .up .title .text {
+  font-family: "Merriweather", sans-serif, serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.header .up .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .up .right .lk {
+  margin-right: 56px;
+  width: 21px;
+  height: 21px;
+}
+
+.header .up .right .bin {
+  height: 19px;
+}
+
+.header .line {
+  background-color: #000;
+  margin-bottom: 24px;
+}
+
+.header .down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .down .link:nth-child(1) {
+  border-bottom: 3px solid #B0DCE2;
+}
+
+.header .down .links,
+.header .down .button {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header .down .links .link,
+.header .down .button .link {
+  text-decoration: none;
+  color: #000;
+}
+
+.header .down .links .link:not(:nth-child(6)),
+.header .down .button .link:not(:nth-child(6)) {
+  margin-right: 32px;
+}
+
+.header .down .button {
+  width: 204px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #232630;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px;
+}
+
+.main {
+  background-color: #E5E5E5;
+  padding-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 24px;
+}
+
+.main .category__text {
+  width: 280px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232630;
+}
+
+.main .title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 16px;
+  text-align: left;
+  color: #232630;
+  padding-top: 32px;
+  text-transform: uppercase;
+}
+
+.main .text {
+  width: 620px;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #707278;
+  text-align: left;
+  margin-bottom: 104px;
+}
+
+.main .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .info .left {
+  background-color: white;
+  width: 220px;
+  height: 704px;
+  margin-right: 20px;
+}
+
+.main .info .left p {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232630;
+  text-transform: uppercase;
+  padding-left: 19px;
+  padding-top: 20px;
+}
+
+.main .info .left .price {
+  margin-bottom: 57px;
+  padding-left: 19px;
+}
+
+.main .info .left .type {
+  margin-bottom: 43px;
+  padding-left: 19px;
+}
+
+.main .info .right {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .info .right .block {
+  width: 220px;
+  background-color: #ffffff;
+  padding-bottom: 24.68px;
+  margin-bottom: 20px;
+}
+
+.main .info .right .block img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.main .info .right .block .text {
+  width: 188px;
+  margin: 0 auto;
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232630;
+  margin-bottom: 16px;
+}
+
+.main .info .right .block .price {
+  width: 188px;
+  margin: 0 auto;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #232630;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.main .info .right .block .add {
+  width: 174.33px;
+  text-align: center;
+  color: #232630;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  padding: 8px 6.84px;
+  background-color: #e9e9ea;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+.footer {
+  background-color: #232630;
+  padding-top: 48px;
+}
+
+.footer__title {
+  font-family: "Merriweather", sans-serif, serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__line {
+  width: 87.5%;
+  background: #FFFFFF;
+  opacity: 0.1;
+  margin: 0 auto;
+}
+
+.footer__info {
+  width: 80%;
+  padding-top: 40px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__info .catalog {
+  width: 35%;
+}
+
+.footer__info .catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.footer__info .catalog__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__info .catalog__info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__info .catalog__info .left .list1 {
+  list-style-type: none;
+}
+
+.footer__info .catalog__info .left .list1 .number1 .link {
+  text-align: left;
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer__info .catalog__info .left .list1 .number1:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__info .catalog__info .right .list2 {
+  list-style-type: none;
+}
+
+.footer__info .catalog__info .right .list2 .number2 .link {
+  text-align: left;
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__info .catalog__info .right .list2 .number2:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__info .service {
+  width: 14.097%;
+}
+
+.footer__info .service__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.footer__info .service__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__info .service .list3 {
+  list-style-type: none;
+}
+
+.footer__info .service .list3 .number3 .link {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer__info .service .list3 .number3:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__info .partner {
+  width: 17.361%;
+}
+
+.footer__info .partner__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.footer__info .partner__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__info .partner .list4 {
+  list-style-type: none;
+}
+
+.footer__info .partner .list4 .number4 .link {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer__info .partner .list4 .number4:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__contacts {
+  padding-top: 40px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contacts .about-us {
+  width: 145px;
+}
+
+.footer__contacts .about-us__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.footer__contacts .about-us__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .about-us .list5 {
+  list-style-type: none;
+}
+
+.footer__contacts .about-us .list5 .number5 .link {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .about-us .list5 .number5:first-child {
+  margin-bottom: 16px;
+}
+
+.footer__contacts .oplata {
+  width: 229px;
+}
+
+.footer__contacts .oplata__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.footer__contacts .oplata__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .oplata .list6 {
+  list-style-type: none;
+}
+
+.footer__contacts .oplata .list6 .number6 .link {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .contact__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.footer__contacts .contact__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .contact .list7 {
+  list-style-type: none;
+}
+
+.footer__contacts .contact .list7 .number7 .link {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .tel-and-email .tel {
+  width: 250px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contacts .tel-and-email .tel__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__contacts .tel-and-email .tel .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__contacts .tel-and-email .tel .phone-1, .footer__contacts .tel-and-email .tel .phone-2 {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contacts .tel-and-email .email {
+  width: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contacts .tel-and-email .email__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__contacts .tel-and-email .email-1 {
+  font-family: "Merriweather", sans-serif, serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__logo {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logo .logo {
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 4.2px 2.94px 4.55px 2.94px;
+  margin-right: 8.84px;
+}
+/*# sourceMappingURL=mebel.css.map */
